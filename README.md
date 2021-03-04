@@ -34,7 +34,7 @@ Virtual appliance is available for download as `.OVA` image from the [Github Rel
 > Username: `st2admin`<br>
 > Password: `Ch@ngeMe`
 
-At the moment only Virtualbox provider is supported. VMWare-compatible virtual appliance is available with [StackStorm Enterprise (EWC)](https://stackstorm.com/#product) image. Ask [StackStorm Support](mailto:support@stackstorm.com) for more info.
+At the moment only Virtualbox provider is supported.
 
 ### `st2-integration-tests`
 Sometimes StackStorm does not run properly for some reason.<br>
@@ -53,7 +53,7 @@ The following tools are required for the build process:
 ### Build Steps
 * Run Packer via `make build`
 
-The Packer build process will import `Ubuntu 16.04 Xenial Server` iso image in Virtualbox, bootstrap Ubuntu server with all the required settings (automating typical iso live CD install steps),
+The Packer build process will import `Ubuntu 18.04 Xenial Server` iso image in Virtualbox, bootstrap Ubuntu server with all the required settings (automating typical iso live CD install steps),
 install & configure StackStorm and finally export both the Vagrant box and .OVA image into the [`/builds`](/builds) directory.
 > See [`st2.json`](/st2.json) which codifies Packer build pipeline and could be used as a source of entire automation logic.
 
